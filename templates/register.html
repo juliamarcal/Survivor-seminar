@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Registration</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style/register.css') }}">
+    </head>
+    <body>
+        <div class="login-page">
+            <form id="employeeForm" onsubmit="return validateForm()">
+                <input type="text" id="name" name="name" placeholder="First name" required>
+                <input type="text" id="surname" name="surname" placeholder="Surname" required>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="date" id="birthDate" name="birthDate" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                <input type="text" id="workTitle" name="workTitle" placeholder="Enter your work role" required>
+                <input type="submit" value="Register">
+                <div class="error" id="errorMessage"></div>
+            </form>
+        </div>
+        <script src="{{ url_for('static', filename='scripts/register.js') }}"></script>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+.customers-overview {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.customers-overview h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stat {
+    flex: 1;
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.stat p {
+    font-size: 16px;
+    color: #666;
+}
+
+.period-selector {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.period-selector button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.period-selector button.selected {
+    background-color: #0056b3;
+}
+
+#graph-container {
+    text-align: center;
+}
+
+#graph-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}

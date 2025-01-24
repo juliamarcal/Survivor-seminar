@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Wardrobe</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style/wardrobe.css') }}">
+      <link href="https://fonts.cdnfonts.com/css/merge-pro" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+      <header>
+        <div class="company-name">
+          <h1>Soul Connection</h1>
+        </div>
+        <div class="navigation" id="nav-menu">
+          <nav>
+            <ul>
+                <li><a href="dashboard">Dashboard</a></li>
+                <li><a href="coaches">Coaches</a></li>
+                <li><a href="clients" class="selected">Costumers</a></li>
+                <li><a href="advices">Tips</a></li>
+                <li><a href="events">Events</a></li>
+                <li><a href="blog">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="icons">
+          <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <i class="fa-regular fa-comment-dots fa-lg" id="comment-icon"></i>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1235px-Flag_of_the_United_States.svg.png" id="language">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s" id="profile-picture-header">
+        </div>
+      </header>
+      <section class="content">
+        <div class="page-title" >
+            <div>
+                <h1 >Wardrobe</h1>
+                <p> You have 10 chlothes to choose from.</p>
+            </div>
+            <div>
+                <button onclick="clearAll()" >Clear all</button>
+            </div>
+        </div>
+        <div class="clothes-selection-cap">
+            <div id="image-box-cap" class="image-box" onclick="openPopup('cap')">
+                <img id="selected-image-cap" src="" alt="+ cap/hat">
+            </div>
+        </div>
+        <div class="clothes-selection-top">
+            <div id="image-box-top" class="image-box" onclick="openPopup('top')">
+                <img id="selected-image-top" src="" alt="+ top">
+            </div>
+        </div>
+        <div class="clothes-selection-bottom">
+            <div id="image-box-bottom" class="image-box" onclick="openPopup('bottom')">
+                <img id="selected-image-bottom" src="" alt="+ bottom">
+            </div>
+        </div>
+        <div class="clothes-selection-shoes">
+            <div id="image-box-shoes" class="image-box" onclick="openPopup('shoes')">
+                <img id="selected-image-shoes" src="" alt="+ shoes">
+            </div>
+        </div>
+      </section>
+
+      <div id="image-popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div id="image-gallery">
+            <!-- Images will be dynamically loaded here -->
+          </div>
+        </div>
+      </div>
+
+      <script src="{{ url_for('static', filename='script/wardrobe.js') }}"></script>
+    </body>
+</html>

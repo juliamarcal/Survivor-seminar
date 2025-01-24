@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Customers List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/costumersList.css') }}">
+    <link href="https://fonts.cdnfonts.com/css/merge-pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="company-name">
+        <h1>Soul Connection</h1>
+    </div>
+    <div class="navigation" id="nav-menu">
+        <nav>
+            <ul>
+                <li><a href="dashboard">Dashboard</a></li>
+                <li><a href="coaches">Coaches</a></li>
+                <li><a href="clients" class="selected">Customers</a></li>
+                <li><a href="advices">Tips</a></li>
+                <li><a href="events">Events</a></li>
+                <li><a href="blog">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="icons">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <i class="fa-regular fa-comment-dots fa-lg" id="comment-icon"></i>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1235px-Flag_of_the_United_States.svg.png" id="language">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s" id="profile-picture-header">
+    </div>
+</header>
+<section class="content">
+    <div class="page-title">
+        <div>
+            <h1>Customers List</h1>
+            <p>You have total 10 customers.</p>
+        </div>
+        <div class="page-title-btns">
+            <button id="export-btn">
+                <i class="fa-solid fa-cloud-arrow-down"></i>
+                Export
+            </button>
+            <button id="add-btn"><i class="fa-solid fa-plus"></i></button>
+        </div>
+    </div>
+    <div class="content-table">
+        <div class="list-tools">
+            <div class="dropdown">
+                <button id="dropdownButton" class="dropbtn" onclick="toggleDropdown()">Dropdown <i class="fa-solid fa-caret-down"></i></button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#" onclick="selectItem(this)">Link 1</a>
+                    <a href="#" onclick="selectItem(this)">Link 2</a>
+                    <a href="#" onclick="selectItem(this)">Link 3</a>
+                </div>
+            </div>
+            <button id="apply-btn">Apply</button>
+            <button id="compare-astrology-btn">Compare 🔮✨</button>
+            <div class="search-bar">
+                <input type="text" class="search-input" id="search-input" placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="icons">
+                <i class="fa-solid fa-filter"></i>
+                <i class="fa-solid fa-gear"></i>
+            </div>
+        </div>
+        <div class="client-table">
+            <script id="customer-template" type="text/x-handlebars-template">
+                <table>
+                    <tr>
+                        <th><input type="checkbox" class="general-checkbox"> client</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Payment methods</th>
+                        <th class="actions">Actions</th>
+                    </tr>
+                    {% raw %}
+                    {{#each customers}}
+                        <tr data-customer-id="{{id}}" onclick="goToClientPage(event, this)">
+                            <td class="client-name">
+                                <input type="checkbox" class="client-checkbox">
+                                <img src="{{profile_picture}}" id="profile-picture-table">
+                                {{name}}
+                            </td>
+                            <td>{{email}}</td>
+                            <td>{{phone}}</td>
+                            <td class="payment"><img src="{{payment_method_img}}" alt=""></td>
+                            <td class="actions"><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                    {{/each}}
+                    {% endraw %}
+                </table>
+            </script>
+            <div id="customer-list"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Popup Modal -->
+<div id="popupModal" class="popup-modal">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Astrological Comparison</h2>
+        <p></p>
+        <p></p>
+    </div>
+</div>
+
+<!-- popup to add new coach -->
+<div id="add-client-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closeClientPopup()">&times;</span>
+        <h2>Add New Client</h2>
+        <form id="add-client-form">
+            <label for="client-email">Email:</label>
+            <input type="email" id="client-email" name="email" required><br>
+            
+            <label for="client-name">Name:</label>
+            <input type="text" id="client-name" name="name" required><br>
+            
+            <label for="client-surname">Surname:</label>
+            <input type="text" id="client-surname" name="surname" required><br>
+            
+            <label for="client-birth-date">Birth Date:</label>
+            <input type="date" id="client-birth-date" name="birth_date" required><br>
+            
+            <label for="client-gender">Gender:</label>
+            <select id="client-gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br>
+
+            <label for="client-phone">Phone Number:</label>
+            <input type="tel" id="client-phone" name="phone" required><br>
+
+            <label for="client-description">Description:</label>
+            <textarea id="client-description" name="description" rows="4" placeholder="Enter a brief description..."></textarea><br>
+
+            <label for="client-address">Address:</label>
+            <input type="text" id="client-address" name="address" placeholder="Enter address..."><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<!-- popup to add new coach -->
+<div id="add-client-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closeClientPopup()">&times;</span>
+        <h2>Add New Client</h2>
+        <form id="add-client-form">
+            <label for="client-email">Email:</label>
+            <input type="email" id="client-email" name="email" required><br>
+            
+            <label for="client-name">Name:</label>
+            <input type="text" id="client-name" name="name" required><br>
+            
+            <label for="client-surname">Surname:</label>
+            <input type="text" id="client-surname" name="surname" required><br>
+            
+            <label for="client-birth-date">Birth Date:</label>
+            <input type="date" id="client-birth-date" name="birth_date" required><br>
+            
+            <label for="client-gender">Gender:</label>
+            <select id="client-gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br>
+
+            <label for="client-phone">Phone Number:</label>
+            <input type="tel" id="client-phone" name="phone" required><br>
+
+            <label for="client-description">Description:</label>
+            <textarea id="client-description" name="description" rows="4" placeholder="Enter a brief description..."></textarea><br>
+
+            <label for="client-address">Address:</label>
+            <input type="text" id="client-address" name="address" placeholder="Enter address..."><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='scripts/costumersList.js') }}"></script>
+<script src="{{ url_for('static', filename='scripts/costumerListRender.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>client profile</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style/client.css') }}">
+      <link href="https://fonts.cdnfonts.com/css/merge-pro" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    </head>
+    <body>
+      <header>
+        <div class="company-name">
+          <h1>Soul Connection</h1>
+        </div>
+        <div class="navigation" id="nav-menu">
+          <nav>
+            <ul>
+                <li><a href="dashboard">Dashboard</a></li>
+                <li><a href="coaches">Coaches</a></li>
+                <li><a href="clients" class="selected">Costumers</a></li>
+                <li><a href="advices">Tips</a></li>
+                <li><a href="events">Events</a></li>
+                <li><a href="blog">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="icons">
+          <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <i class="fa-regular fa-comment-dots fa-lg" id="comment-icon"></i>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1235px-Flag_of_the_United_States.svg.png" id="language">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s" id="profile-picture-header">
+        </div>
+      </header>
+      <div class="container" id="customer-details-container">
+      </div>
+      <script id="customer-template" type="text/x-handlebars-template">
+        <div class="header">
+          <h1>Customer Details</h1>
+        </div>
+        <div class="content">
+          <div class="profile-section">
+            <img src="{{profilePicture}}" alt="Profile Picture" class="profile-pic">
+            <h2>{{client.name}} {{client.surname}}</h2>
+            <div class="contact-icons">
+              <span class="icon-email">📧</span>
+              <span class="icon-bookmark">🔖</span>
+            </div>
+            <div class="encounters-info">
+              <div>
+                {% raw %}
+                <h3>{{totalEncounters}}</h3>
+                <p>Total Encounters</p>
+              </div>
+              <div>
+                <h3>{{positives}}</h3>
+                <p>Positives</p>
+              </div>
+              <div>
+                <h3>{{inProgress}}</h3>
+                <p>In Progress</p>
+                {% endraw %}
+              </div>
+            </div>
+            <div class="short-details">
+              <h4>Short Details</h4>
+                <h5>User ID:</h5>
+              <p>{{client.UniqueID}}</p>
+                <h5>Email:</h5>
+              <p>{{client.email}}</p>
+                <h5>Address:</h5>
+              <p>{{client.address}}</p>
+                <h5>Last Activity:</h5>
+              {% raw %}
+              <p>{{lastActivity}}</p>
+                <h5>Coach:</h5>
+              <p>{{coach}}</p>
+              {% endraw %}
+            </div>
+            <div class="wardrobe-btn">
+              <a href="wardrobe">Wardrobe</a>
+            </div>
+          </div>
+          <div class="details-section">
+            <div class="meetings">
+              <h3>Recent Meetings</h3>
+              <table>
+                <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Rating</th>
+                  <th>Report</th>
+                  <th>Source</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% raw %}
+                {{#each recentMeetings}}
+                  <tr>
+                    <td class="date">{{date}}</td>
+                    <td>{{renderStars rating}}</td>
+                    <td>{{report}}</td>
+                    <td>{{source}}</td>
+                  </tr>
+                {{/each}}
+                {% endraw %}
+                </tbody>
+              </table>
+            </div>
+            <div class="payments">
+              <h3>Payments History</h3>
+              <table>
+                <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Payment Method</th>
+                  <th>Amount</th>
+                  <th>Comment</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% raw %}
+                {{#each paymentsHistory}}
+                  <tr>
+                    <td class="date">{{date}}</td>
+                    <td><img src="{{paymentMethodIcon}}" alt="{{paymentMethod}}" class="payment-icon"></td>
+                    <td>{{amount}}</td>
+                    <td>{{comment}}</td>
+                  </tr>
+                {{/each}}
+                {% endraw %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </script>
+      <script src="{{ url_for('static', filename='scripts/client.js') }}"></script>
+    </body>
+</html>

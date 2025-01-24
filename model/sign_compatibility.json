@@ -1,0 +1,866 @@
+[
+  {
+    "sign1": "Aries",
+    "sign2": "Aries",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Aries",
+    "sign2": "Taurus",
+    "compatibility_score": 65,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Aries",
+    "sign2": "Gemini",
+    "compatibility_score": 65,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Aries",
+    "sign2": "Cancer",
+    "compatibility_score": 65,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Aries",
+    "sign2": "Leo",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Aries",
+    "sign2": "Virgo",
+    "compatibility_score": 45,
+    "description": "Low compatibility"
+  },
+  {
+    "sign1": "Aries",
+    "sign2": "Libra",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Aries",
+    "sign2": "Scorpio",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Aries",
+    "sign2": "Sagittarius",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Aries",
+    "sign2": "Capricorn",
+    "compatibility_score": 55,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Aries",
+    "sign2": "Aquarius",
+    "compatibility_score": 50,
+    "description": "Low compatibility"
+  },
+  {
+    "sign1": "Aries",
+    "sign2": "Pisces",
+    "compatibility_score": 65,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Taurus",
+    "sign2": "Aries",
+    "compatibility_score": 60,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Taurus",
+    "sign2": "Taurus",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Taurus",
+    "sign2": "Gemini",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Taurus",
+    "sign2": "Cancer",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Taurus",
+    "sign2": "Leo",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Taurus",
+    "sign2": "Virgo",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Taurus",
+    "sign2": "Libra",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Taurus",
+    "sign2": "Scorpio",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Taurus",
+    "sign2": "Sagittarius",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Taurus",
+    "sign2": "Capricorn",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Taurus",
+    "sign2": "Aquarius",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Taurus",
+    "sign2": "Pisces",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Gemini",
+    "sign2": "Aries",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Gemini",
+    "sign2": "Taurus",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Gemini",
+    "sign2": "Gemini",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Gemini",
+    "sign2": "Cancer",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Gemini",
+    "sign2": "Leo",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Gemini",
+    "sign2": "Virgo",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Gemini",
+    "sign2": "Libra",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Gemini",
+    "sign2": "Scorpio",
+    "compatibility_score": 65,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Gemini",
+    "sign2": "Sagittarius",
+    "compatibility_score": 95,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Gemini",
+    "sign2": "Capricorn",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Gemini",
+    "sign2": "Aquarius",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Gemini",
+    "sign2": "Pisces",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Cancer",
+    "sign2": "Aries",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Cancer",
+    "sign2": "Taurus",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Cancer",
+    "sign2": "Gemini",
+    "compatibility_score": 60,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Cancer",
+    "sign2": "Cancer",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Cancer",
+    "sign2": "Leo",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Cancer",
+    "sign2": "Virgo",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Cancer",
+    "sign2": "Libra",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Cancer",
+    "sign2": "Scorpio",
+    "compatibility_score": 55,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Cancer",
+    "sign2": "Sagittarius",
+    "compatibility_score": 55,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Cancer",
+    "sign2": "Capricorn",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Cancer",
+    "sign2": "Aquarius",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Cancer",
+    "sign2": "Pisces",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Leo",
+    "sign2": "Aries",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Leo",
+    "sign2": "Taurus",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Leo",
+    "sign2": "Gemini",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Leo",
+    "sign2": "Cancer",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Leo",
+    "sign2": "Leo",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Leo",
+    "sign2": "Virgo",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Leo",
+    "sign2": "Libra",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Leo",
+    "sign2": "Scorpio",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Leo",
+    "sign2": "Sagittarius",
+    "compatibility_score": 95,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Leo",
+    "sign2": "Capricorn",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Leo",
+    "sign2": "Aquarius",
+    "compatibility_score": 55,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Leo",
+    "sign2": "Pisces",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Virgo",
+    "sign2": "Aries",
+    "compatibility_score": 45,
+    "description": "Low compatibility"
+  },
+  {
+    "sign1": "Virgo",
+    "sign2": "Taurus",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Virgo",
+    "sign2": "Gemini",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Virgo",
+    "sign2": "Cancer",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Virgo",
+    "sign2": "Leo",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Virgo",
+    "sign2": "Virgo",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Virgo",
+    "sign2": "Libra",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Virgo",
+    "sign2": "Scorpio",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Virgo",
+    "sign2": "Sagittarius",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Virgo",
+    "sign2": "Capricorn",
+    "compatibility_score": 65,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Virgo",
+    "sign2": "Aquarius",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Virgo",
+    "sign2": "Pisces",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Libra",
+    "sign2": "Aries",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Libra",
+    "sign2": "Taurus",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Libra",
+    "sign2": "Gemini",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Libra",
+    "sign2": "Cancer",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Libra",
+    "sign2": "Leo",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Libra",
+    "sign2": "Virgo",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Libra",
+    "sign2": "Libra",
+    "compatibility_score": 95,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Libra",
+    "sign2": "Scorpio",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Libra",
+    "sign2": "Sagittarius",
+    "compatibility_score": 95,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Libra",
+    "sign2": "Capricorn",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Libra",
+    "sign2": "Aquarius",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Libra",
+    "sign2": "Pisces",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Scorpio",
+    "sign2": "Aries",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Scorpio",
+    "sign2": "Taurus",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Scorpio",
+    "sign2": "Gemini",
+    "compatibility_score": 65,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Scorpio",
+    "sign2": "Cancer",
+    "compatibility_score": 55,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Scorpio",
+    "sign2": "Leo",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Scorpio",
+    "sign2": "Virgo",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Scorpio",
+    "sign2": "Libra",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Scorpio",
+    "sign2": "Scorpio",
+    "compatibility_score": 65,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Scorpio",
+    "sign2": "Sagittarius",
+    "compatibility_score": 55,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Scorpio",
+    "sign2": "Capricorn",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Scorpio",
+    "sign2": "Aquarius",
+    "compatibility_score": 55,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Scorpio",
+    "sign2": "Pisces",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Sagittarius",
+    "sign2": "Aries",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Sagittarius",
+    "sign2": "Taurus",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Sagittarius",
+    "sign2": "Gemini",
+    "compatibility_score": 95,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Sagittarius",
+    "sign2": "Cancer",
+    "compatibility_score": 55,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Sagittarius",
+    "sign2": "Leo",
+    "compatibility_score": 95,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Sagittarius",
+    "sign2": "Virgo",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Sagittarius",
+    "sign2": "Libra",
+    "compatibility_score": 95,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Sagittarius",
+    "sign2": "Scorpio",
+    "compatibility_score": 55,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Sagittarius",
+    "sign2": "Sagittarius",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Sagittarius",
+    "sign2": "Capricorn",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Sagittarius",
+    "sign2": "Aquarius",
+    "compatibility_score": 60,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Sagittarius",
+    "sign2": "Pisces",
+    "compatibility_score": 65,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Capricorn",
+    "sign2": "Aries",
+    "compatibility_score": 55,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Capricorn",
+    "sign2": "Taurus",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Capricorn",
+    "sign2": "Gemini",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Capricorn",
+    "sign2": "Cancer",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Capricorn",
+    "sign2": "Leo",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Capricorn",
+    "sign2": "Virgo",
+    "compatibility_score": 65,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Capricorn",
+    "sign2": "Libra",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Capricorn",
+    "sign2": "Scorpio",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Capricorn",
+    "sign2": "Sagittarius",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Capricorn",
+    "sign2": "Capricorn",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Capricorn",
+    "sign2": "Aquarius",
+    "compatibility_score": 65,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Capricorn",
+    "sign2": "Pisces",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Aquarius",
+    "sign2": "Aries",
+    "compatibility_score": 50,
+    "description": "Low compatibility"
+  },
+  {
+    "sign1": "Aquarius",
+    "sign2": "Taurus",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Aquarius",
+    "sign2": "Gemini",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Aquarius",
+    "sign2": "Cancer",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Aquarius",
+    "sign2": "Leo",
+    "compatibility_score": 55,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Aquarius",
+    "sign2": "Virgo",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Aquarius",
+    "sign2": "Libra",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Aquarius",
+    "sign2": "Scorpio",
+    "compatibility_score": 55,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Aquarius",
+    "sign2": "Sagittarius",
+    "compatibility_score": 60,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Aquarius",
+    "sign2": "Capricorn",
+    "compatibility_score": 65,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Aquarius",
+    "sign2": "Aquarius",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Aquarius",
+    "sign2": "Pisces",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Pisces",
+    "sign2": "Aries",
+    "compatibility_score": 65,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Pisces",
+    "sign2": "Taurus",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Pisces",
+    "sign2": "Gemini",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Pisces",
+    "sign2": "Cancer",
+    "compatibility_score": 75,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Pisces",
+    "sign2": "Leo",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Pisces",
+    "sign2": "Virgo",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Pisces",
+    "sign2": "Libra",
+    "compatibility_score": 80,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Pisces",
+    "sign2": "Scorpio",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Pisces",
+    "sign2": "Sagittarius",
+    "compatibility_score": 65,
+    "description": "Average compatibility"
+  },
+  {
+    "sign1": "Pisces",
+    "sign2": "Capricorn",
+    "compatibility_score": 70,
+    "description": "Good compatibility"
+  },
+  {
+    "sign1": "Pisces",
+    "sign2": "Aquarius",
+    "compatibility_score": 85,
+    "description": "Very compatible"
+  },
+  {
+    "sign1": "Pisces",
+    "sign2": "Pisces",
+    "compatibility_score": 90,
+    "description": "Very compatible"
+  }
+]

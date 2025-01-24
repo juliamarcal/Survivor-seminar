@@ -1,0 +1,236 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merge Pro', sans-serif;
+    color: #3b4e67;
+    background-color: #f6f7fb;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+    position: relative;
+}
+
+.company-name {
+    flex: 0 1 auto;
+}
+
+.company-name h1 {
+    margin: 0;
+}
+
+.navigation {
+    flex: 1;
+}
+
+nav {
+    max-width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #20365e;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #0d5bc1;
+}
+
+nav ul li a.selected {
+    color: #dd3187;
+    text-decoration: none;
+}
+
+nav ul li a.selected::after { /* Line in the bottom of selected nav */
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #dd3187;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons img {
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+#language {
+    width: 20px;
+    height: 20px;
+}
+
+#profile-picture-header {
+    width: 30px;
+    height: 30px;
+}
+
+/* responsive header */
+@media (max-width: 768px) { 
+    nav {
+      display: none; /* Hide the nav menu by default */
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      position: absolute;
+      top: 60px; /* Adjust based on your header height */
+      right: 0;
+      width: 100%;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .menu-toggle {
+      display: block; /* Show the toggle button */
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: #20365e;
+      cursor: pointer;
+    }
+  
+    .icons {
+      margin-left: auto;
+    }
+  
+    .company-name {
+      margin-right: auto;
+    }
+  
+    .nav-open nav { /* Show the menu when toggled */
+      display: flex;
+    }
+  }
+  
+@media (min-width: 769px) {   /* For larger screens, the nav is visible */
+    .menu-toggle {
+        display: none; /* Hide the menu toggle button on larger screens */
+    }
+
+    nav {
+        display: flex; /* Ensure the nav stays visible on large screens */
+    }
+}
+
+@media (max-width: 420px) {
+    #comment-icon, #language {
+        display: none;
+    }
+}
+
+@media (min-width: 420px) {
+    #comment-icon, #language {
+        display: flex;
+    }
+}
+  
+/* content */
+
+.content {
+    margin: 10px;
+}
+
+.page-title h1 {
+    font-size: xx-large;
+    margin: 1px;
+    color: #30445e;
+}
+
+/* table with advice */
+
+.dropdown-container {
+    width: 100%;
+    margin: 20px auto;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #e4e6ef;
+    border-width: 1px;
+    background-color: #fff;
+    overflow: hidden;
+}
+  
+.dropdown-title {
+    color: #30445e;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s;
+    font-family: 'Merge Pro', sans-serif;
+    font-size: bold;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-title i {
+    margin-left: 10px;
+    color: #dd3187;
+}
+
+.dropdown-item:not(:last-child) {
+    border-bottom: 1px solid #e4e6ef;
+}
+  
+.dropdown-title:hover {
+    background-color: #d4d5db;
+}
+  
+.dropdown-description {
+    display: none;
+    padding: 10px;
+    font-size: 14px;
+    border-top: 1px solid #e4e6ef;
+}
+  

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="../style/blog.css">
+    <link href="https://fonts.cdnfonts.com/css/merge-pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="company-name">
+        <h1>Soul Connection</h1>
+    </div>
+    <div class="navigation" id="nav-menu">
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="CoachesList.html">Coaches</a></li>
+                <li><a href="costumersList.html">Customers</a></li>
+                <li><a href="advice.html">Tips</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html" class="selected">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="icons">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <i class="fa-regular fa-comment-dots fa-lg" id="comment-icon"></i>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1235px-Flag_of_the_United_States.svg.png" id="language">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s" id="profile-picture-header">
+    </div>
+</header>
+<section class="content">
+    <div class="page-title">
+        <div>
+            <h1>Blog</h1>
+            <p>Welcome!</p>
+        </div>
+        <div class="page-title-btns">
+            <button id="write-btn">Write +</button>
+        </div>
+    </div>
+    <div class="posts-grid">
+        <article class="post-item" id="post-1" onclick="redirectToPost(1);">
+            <img src="https://via.placeholder.com/300x200" alt="Post Image">
+            <div class="post-content">
+                <h2>Blog Post Title 1</h2>
+                <p>A short description or header for the blog post.</p>
+            </div>
+        </article>
+
+        <article class="post-item" id="post-2" onclick="redirectToPost(2);">
+            <img src="https://via.placeholder.com/300x200" alt="Post Image">
+            <div class="post-content">
+                <h2>Blog Post Title 2</h2>
+                <p>A short description or header for the blog post.</p>
+            </div>
+        </article>
+
+        <article class="post-item" id="post-3" onclick="redirectToPost(3);">
+            <img src="https://via.placeholder.com/300x200" alt="Post Image">
+            <div class="post-content">
+                <h2>Blog Post Title 3</h2>
+                <p>A short description or header for the blog post.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- Pop-up form for adding a new blog post -->
+<div id="popup-form" class="popup">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Write Your Blog Post</h2>
+        <form id="blog-form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="8" required></textarea>
+
+            <label for="image">Image URL:</label>
+            <input type="text" id="image" name="image" placeholder="Optional (pick a link from the internet)">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script src="../scripts/blog.js"></script>
+</body>
+</html>

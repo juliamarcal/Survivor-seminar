@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>dashboard</title>
+      <link rel="stylesheet" href="../style/advice.css">
+      <link href="https://fonts.cdnfonts.com/css/merge-pro" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+      <header>
+        <div class="company-name">
+          <h1>Soul Connection</h1>
+        </div>
+        <div class="navigation" id="nav-menu">
+          <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="CoachesList.html">Coaches</a></li>
+                <li><a href="costumersList.html">Customers</a></li>
+                <li><a href="advice.html" class="selected">Tips</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="icons">
+          <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <i class="fa-regular fa-comment-dots fa-lg" id="comment-icon"></i>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1235px-Flag_of_the_United_States.svg.png" id="language">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuphMb4mq-EcVWhMVT8FCkv5dqZGgvn_QiA&s" id="profile-picture-header">
+        </div>
+      </header>
+      <section class="content">
+        <div class="page-title">
+            <h1>Tips for coaches</h1>
+        </div>
+        <div class="dropdown-container">
+            <div class="dropdown-item">
+                <button class="dropdown-title">Title 1 <i class="fa-solid fa-caret-down"></i></button>
+                <div class="dropdown-description">Description for Title 1</div>
+            </div>
+            <div class="dropdown-item">
+                <button class="dropdown-title">Title 2 <i class="fa-solid fa-caret-down"></i></button>
+                <div class="dropdown-description">Description for Title 2</div>
+            </div>
+            <div class="dropdown-item">
+                <button class="dropdown-title">Title 3 <i class="fa-solid fa-caret-down"></i></button>
+                <div class="dropdown-description">Description for Title 3</div>
+            </div>
+        </div>            
+      </section>
+      <script src="../scripts/advice.js"></script>
+    </body>
+</html>
