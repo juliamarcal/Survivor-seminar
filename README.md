@@ -4,6 +4,8 @@ Survivor Seminar is a responsive and accessible web application designed to help
 
 The backend implements full CRUD (Create, Read, Update, Delete) functionality to store and manage data fetched from an external API. Regular updates ensure synchronization between the old and new systems, facilitating a seamless transition.
 
+Find out more information about the project at [Project PDF](./B-SVR-500_project.pdf)
+
 ## Group:
  - Júlia Bomfá
  - Marianna Titova
